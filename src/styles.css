@@ -1,0 +1,151 @@
+* {
+  color: black;
+  font-family: "Nunito";
+  font-weight: 400;
+}
+
+/* Header med meny och herobild */
+header {
+  padding: 0 4rem;
+}
+
+nav {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+}
+
+.logo {
+  width: 2.8rem;
+  height: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  text-transform: uppercase;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-right: 4rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  letter-spacing: 0.1rem;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+nav ul li a:hover {
+  font-weight: 800;
+}
+
+.nav-links {
+  justify-items: center;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 74vh; /* Sätter höjden direkt så att inget överlappar */
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  background: rgba(255, 255, 255);
+  color: white;
+  padding: 2rem;
+  max-width: 24rem;
+  margin-left: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.btn {
+  font-size: 1rem;
+  text-decoration: none;
+  background: #155576;
+  padding: 0.6rem 1.6rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+/*Stylar main-innehåller */
+h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+/*Fyra boxar med bild, rubrik och brödtext */
+
+.boxes {
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.box-image {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: rgb(241, 241, 240);
+  width: 25%;
+}
+
+.box-content {
+  padding: 1rem;
+}
+
+.read-more:hover {
+  font-style: italic;
+}
+
+/* Footer*/
+footer {
+    margin-top: 4rem;
+  background-color: #3c3c3c;
+  text-align: center;
+  padding: 2rem;
+}
+
+footer p {
+  color: white;
+  font-size: 1rem;
+}
