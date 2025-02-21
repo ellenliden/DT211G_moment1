@@ -20,6 +20,10 @@ nav {
   height: auto;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 nav ul li {
   display: inline-block;
   text-transform: uppercase;
@@ -101,18 +105,32 @@ nav ul li a:hover {
 h2 {
   text-align: center;
   margin: 0 auto;
-  margin-top: 4rem;
+  margin: 4rem 0;
+}
+
+h3 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 /*Fyra boxar med bild, rubrik och brödtext */
-
 .boxes {
-  padding: 4rem;
+  padding: 0 2rem;
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  background-color: rgb(241, 241, 240);
+  width: 20%;
+  min-width: 250px;
+  overflow: hidden;
 }
 
 .box-image {
@@ -121,16 +139,12 @@ h2 {
   object-fit: cover;
 }
 
-.box1,
-.box2,
-.box3,
-.box4 {
-  background-color: rgb(241, 241, 240);
-  width: 25%;
+.box-content {
+  padding: 1rem 1.2rem;
 }
 
-.box-content {
-  padding: 1rem;
+.box-content p {
+  font-size: 0.9rem;
 }
 
 .read-more:hover {
@@ -139,7 +153,7 @@ h2 {
 
 /* Footer*/
 footer {
-    margin-top: 4rem;
+  margin-top: 4rem;
   background-color: #3c3c3c;
   text-align: center;
   padding: 2rem;
@@ -148,4 +162,101 @@ footer {
 footer p {
   color: white;
   font-size: 1rem;
+}
+
+/* För tablets (max-width: 1024px)*/
+@media (max-width: 1024px) {
+  header {
+    padding: 0 2rem;
+  }
+
+  .hero {
+    height: 60vh;
+  }
+
+  .hero-content {
+    max-width: 20rem;
+    margin-left: 2rem;
+  }
+  .boxes {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 40%;
+  }
+}
+
+/* För mobile (max-width: 768px)*/
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgb(233, 233, 233);
+    position: absolute;
+    top: 5.2rem;
+    right: 0;
+    width: 100%;
+    text-align: left;
+    margin: 0 auto;
+    z-index: 10;
+    padding: 2rem 0;
+  }
+
+  .nav-links li {
+    margin-left: 4rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    top: 1.2rem;
+  }
+  .hero {
+    height: 50vh;
+    justify-content: center;
+  }
+
+  .hero-content {
+    max-width: 60%;
+    text-align: center;
+    margin: 0;
+    padding: 1.5rem;
+  }
+  .hero-content h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content .btn {
+    display: none;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4 {
+    width: 90%;
+  }
 }
