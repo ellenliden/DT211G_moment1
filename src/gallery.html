@@ -26,11 +26,16 @@
       </nav>
 
       <section class="hero">
-        <img
-          src="images/galleryhero.jpg"
-          alt="dekorativ bild av geometriska former"
-          class="hero-image"
-        />
+        <picture>
+          <source srcset="images/galleryhero.jpg?as=avif" type="image/avif" />
+          <source srcset="images/galleryhero.jpg?as=webp" type="image/webp" />
+          <source srcset="images/galleryhero.jpg?" type="image/jpeg" />
+          <img
+            src="images/galleryhero.jpg"
+            alt="dekorativ bild av geometriska former"
+            class="hero-image"
+          />
+        </picture>
         <div class="hero-content">
           <h1>Galleri</h1>
           <p>
@@ -44,53 +49,99 @@
       <h2>Från mitt fotoalbum</h2>
       <section class="boxes">
         <div class="box1">
-          <img src="images/lights.jpg" alt="" class="box-image" />
+          <picture>
+            <source srcset="images/lights.jpg?as=avif" type="image/avif" />
+            <source srcset="images/lights.jpg?as=webp" type="image/webp" />
+            <source srcset="images/lights.jpg?" type="image/jpeg" />
+            <img src="images/lights.jpg?" alt="" class="box-image" />
+          </picture>
           <div class="box-content">
             <h3>Belysning</h3>
           </div>
         </div>
         <div class="box2">
-          <img src="images/ceramic.jpg" alt="" class="box-image" />
+          <picture>
+            <source srcset="images/ceramic.jpg?as=avif" type="image/avif" />
+            <source srcset="images/ceramic.jpg?as=webp" type="image/webp" />
+            <source srcset="images/ceramic.jpg?" type="image/jpeg" />
+            <img src="images/ceramic.jpg" alt="" class="box-image" />
+          </picture>
           <div class="box-content">
             <h3>Keramik</h3>
           </div>
         </div>
         <div class="box3">
-          <img src="images/architecture.jpg" alt="" class="box-image" />
+          <picture>
+            <source
+              srcset="images/architecture.jpg?as=avif"
+              type="image/avif"
+            />
+            <source
+              srcset="images/architecture.jpg?as=webp"
+              type="image/webp"
+            />
+            <source srcset="images/architecture.jpg?" type="image/jpeg" />
+            <img src="images/architecture.jpg" alt="" class="box-image" />
+          </picture>
           <div class="box-content">
             <h3>Arkitektur</h3>
           </div>
         </div>
         <div class="box4">
-          <img src="images/art.jpg" alt="" class="box-image" />
+          <picture>
+            <source srcset="images/art.jpg?as=avif" type="image/avif" />
+            <source srcset="images/art.jpg?as=webp" type="image/webp" />
+            <source srcset="images/art.jpg?" type="image/jpeg" />
+            <img src="images/art.jpg" alt="" class="box-image" />
+          </picture>
           <div class="box-content">
             <h3>Konstutställning</h3>
           </div>
         </div>
         <div class="box5">
+          <picture>
+            <source srcset="images/sagrada.jpg?as=avif" type="image/avif" />
+            <source srcset="images/sagrada.jpg?as=webp" type="image/webp" />
+            <source srcset="images/sagrada.jpg?" type="image/jpeg" />
             <img src="images/sagrada.jpg" alt="" class="box-image" />
-            <div class="box-content">
-              <h3>Sagrada Familia</h3>
-            </div>
+          </picture>
+          <div class="box-content">
+            <h3>Sagrada Familia</h3>
           </div>
-          <div class="box6">
+        </div>
+        <div class="box6">
+          <picture>
+            <source srcset="images/coffee.jpg?as=avif" type="image/avif" />
+            <source srcset="images/coffee.jpg?as=webp" type="image/webp" />
+            <source srcset="images/coffee.jpg?" type="image/jpeg" />
             <img src="images/coffee.jpg" alt="" class="box-image" />
-            <div class="box-content">
-              <h3>Kaffe</h3>
-            </div>
+          </picture>
+          <div class="box-content">
+            <h3>Kaffe</h3>
           </div>
-          <div class="box7">
+        </div>
+        <div class="box7">
+          <picture>
+            <source srcset="images/golf.jpg?as=avif" type="image/avif" />
+            <source srcset="images/golf.jpg?as=webp" type="image/webp" />
+            <source srcset="images/golf.jpg?" type="image/jpeg" />
             <img src="images/golf.jpg" alt="" class="box-image" />
-            <div class="box-content">
-              <h3>Golf</h3>
-            </div>
+          </picture>
+          <div class="box-content">
+            <h3>Golf</h3>
           </div>
-          <div class="box8">
+        </div>
+        <div class="box8">
+          <picture>
+            <source srcset="images/market.jpg?as=avif" type="image/avif" />
+            <source srcset="images/market.jpg?as=webp" type="image/webp" />
+            <source srcset="images/market.jpg?" type="image/jpeg" />
             <img src="images/market.jpg" alt="" class="box-image" />
-            <div class="box-content">
-              <h3>Marknad</h3>
-            </div>
+          </picture>
+          <div class="box-content">
+            <h3>Marknad</h3>
           </div>
+        </div>
       </section>
     </main>
     <footer>
