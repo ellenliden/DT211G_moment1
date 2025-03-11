@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script type="module" src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="svartvit logotyp av geometriska former"
+            class="logo"
+          />
+        </a>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="gallery.html">Galleri</a></li>
+          <li><a href="process.html">Arbetsprocess</a></li>
+        </ul>
+      </nav>
+
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero4.jpg?as=avif" type="image/avif" />
+          <source srcset="images/hero4.jpg?as=webp" type="image/webp" />
+          <source srcset="images/hero4.jpg?" type="image/jpeg" />
+          <img
+            src="images/hero4.jpg"
+            alt="dekorativ herobild med blå och gröna vågräta ränder"
+            class="hero-image"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>Arbetsprocess</h1>
+          <p>
+            Följ min arbetsprocess - en strukturerad utvecklingsmiljö, från
+            setup till automatisk publicering.
+          </p>
+          <a href="process.html" class="btn">Läs mer</a>
+        </div>
+      </section>
+    </header>
+
+    <!-- Sektion för arbetsprocess -->
+    <main class="process-main">
+      <section class="process-section">
+        <h2>Min arbetsprocess</h2>
+        <h3>Inledning</h3>
+        <p>
+          Min arbetsprocess är strukturerad för att effektivisera utvecklingen
+          och publiceringen av webbplatsen genom att använda Git, Node.js och
+          automatiseringsverktyg. Genom att arbeta med branches, automatisera
+          uppgifter och integrera en CI/CD-lösning (Continuous
+          Integration/Continuous Deployment) säkerställer jag en smidig och
+          pålitlig arbetsflöde.
+        </p>
+
+        <h3>Hur tillgänglig är webbplatsen?</h3>
+        <p>
+          Jag använder Git och GitHub för att hantera versionshistorik och
+          samarbeta effektivt. För att säkerställa en tydlig struktur i
+          projektet följer jag dessa principer:
+        </p>
+        <ul class="list">
+          <li>
+            Branch-struktur: Jag arbetar med två huvudbrancher: development för
+            aktiv utveckling och main för publicering.
+          </li>
+
+          <li>
+            Regelbundna commits: Varje ändring committas med tydliga och
+            beskrivande meddelanden.
+          </li>
+
+          <li>
+            Exkludera filer med .gitignore: Jag exkluderar filer som inte ska
+            versionshanteras, exempelvis node_modules/.
+          </li>
+
+          <li>
+            Pull requests & merges: Jag använder pull requests för att granska
+            och testa kod innan den slås samman med main. När jag vill föra över
+            kod från development till main skapar jag en pull request. När den
+            godkänns och mergas blir koden en del av den slutgiltiga versionen.
+          </li>
+        </ul>
+
+        <h3>Automatisering med Node.js</h3>
+        <p>
+          För att effektivisera arbetsflödet använder jag Node.js tillsammans
+          med automatiseringsverktyg. Dessa verktyg används för att hantera
+          byggprocessen, optimera resurser och säkerställa att webbplatsen
+          fungerar smidigt.
+        </p>
+
+        <h3>Automatiserade uppgifter</h3>
+        <p>Jag har konfigurerat följande automatiserade uppgifter:</p>
+        <ul class="list">
+          <li>
+            Minifiering av CSS och HTML med Parcel för att reducera filstorlek.
+          </li>
+          <li>Transpilering och minifiering av JavaScript med Parcel.</li>
+          <li>
+            Bildoptimering och konvertering till WebP och AVIF med Parcel.
+          </li>
+          <li>
+            Kopiering av optimerade filer till en publiceringsmapp (dist/).
+          </li>
+        </ul>
+
+        <p>
+          Dessa uppgifter körs automatiskt när jag bygger projektet med "npm run
+          build" i terminalen. För att starta en utvecklingsserver lokalt
+          använder jag "npm run start". Detta startar en server som uppdaterar
+          sidan automatiskt när jag gör ändringar i koden.
+        </p>
+
+        <h3>Publicering</h3>
+
+        <p>
+          Jag använder Netlify för att automatisera publiceringen av
+          webbplatsen. Tjänsten är kopplad till mitt GitHub-repository och
+          övervakar main-branchen, vilket innebär att varje ändring som pushas
+          automatiskt byggs och publiceras. När jag har gjort uppdateringar i
+          dev-branchen och är nöjd med resultatet, skapar jag en pull request
+          till main. När den mergas, triggas en ny publicering, och webbplatsen
+          uppdateras med de senaste ändringarna.
+        </p>
+
+        <h3>Projektstruktur</h3>
+        <p>
+          Projektet är organiserat för att vara lättöverskådligt och följa en
+          tydlig struktur.
+        </p>
+        <ul class="list">
+          <li>
+            src/ – Innehåller all källkod och resurser som används i projektet.
+            <ul class="listInList">
+              <li>images/ – mapp som lagrar alla bilder och andra medier.</li>
+              <li>styles.css – stilfilen för all styling</li>
+              <li>app.js – JavaScript-filen för all javascript på hemsidan</li>
+              <li>
+                index.html, gallery.html och process.html – dvs alla sidor med
+                innehåll för webbplatsen.
+              </li>
+            </ul>
+          </li>
+          <li>
+            dist/ – Den mapp där den färdigbyggda webbplatsen hamnar efter att
+            projektet har byggts med Parcel.
+          </li>
+
+          <li>
+            node_modules/ – Innehåller alla beroenden som installeras via npm.
+          </li>
+          <li>
+            .parcel-cache/ – Cachefiler som används av Parcel för att snabba upp
+            byggprocessen.
+          </li>
+          <li>
+            .gitignore – Lista över filer och mappar som inte ska inkluderas i
+            versionshanteringen med Git.
+          </li>
+          <li>
+            package.json – Beskriver projektets beroenden och inställningar.
+          </li>
+          <li>
+            package-lock.json – Sparar exakta versioner av installerade paket
+            för att säkerställa konsekventa installationer.
+          </li>
+          <li>
+            README.md – Innehåller dokumentation om projektet. Denna struktur
+            hjälper till att hålla projektet organiserat, vilket gör det enklare
+            att hantera och vidareutveckla.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Ellen Lidén</p>
+      <p>VT2025 DT211G Datateknik, Frontend-baserad webbutveckling</p>
+    </footer>
+  </body>
+</html>
