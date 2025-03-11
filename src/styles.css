@@ -155,6 +155,47 @@ h3 {
   font-style: italic;
 }
 
+/* Styling för Arbetsprocess-sidan */
+.process-main {
+  padding: 2rem;
+  max-width: 60%;
+  margin-left: 8vw;
+}
+
+.process-section {
+  text-align: left;
+}
+
+.process-section h2 {
+  text-align: left;
+}
+
+.process-section h3 {
+  color: #000000;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.process-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.list li {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1rem 0rem;
+}
+
+.listInList li {
+  line-height: 0.8;
+}
+.listInList {
+  margin-bottom: 2rem;
+}
+
 /* Footer*/
 footer {
   margin-top: 4rem;
@@ -197,22 +238,18 @@ footer p {
   .box8 {
     width: 40%;
   }
+
+  /* Styling för Arbetsprocess-sidan */
+  .process-main {
+    max-width: 70%;
+    margin-left: 4vw;
+  }
 }
 
 /* För mobile (max-width: 768px)*/
 @media (max-width: 768px) {
   .nav-links {
     display: none;
-    flex-direction: column;
-    background: rgb(233, 233, 233);
-    position: absolute;
-    top: 5.2rem;
-    right: 0;
-    width: 100%;
-    text-align: left;
-    margin: 0 auto;
-    z-index: 10;
-    padding: 2rem 0;
   }
 
   .nav-links li {
@@ -270,5 +307,12 @@ footer p {
   .box7,
   .box8 {
     width: 90%;
+  }
+
+  /* Styling för Arbetsprocess-sidan */
+  .process-main {
+    padding: 2rem;
+    max-width: 80%;
+    margin-left: 0;
   }
 }
