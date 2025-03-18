@@ -196,6 +196,38 @@ h3 {
   margin-bottom: 2rem;
 }
 
+/* Ramschema */
+.searchbar {
+  margin-left: 8rem;
+
+}
+
+
+input {
+  margin: 1rem;
+  padding: 0.6rem;
+  width: 80%;
+}
+
+
+table {
+  width: 80%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+th {
+  cursor: pointer;
+  background-color: #f4f4f4;
+}
+
 /* Footer*/
 footer {
   margin-top: 4rem;
