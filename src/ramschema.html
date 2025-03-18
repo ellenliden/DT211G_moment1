@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="js/app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            src="images/logo.png"
+            alt="svartvit logotyp av geometriska former"
+            class="logo"
+          />
+        </a>
+        <button class="menu-toggle">☰</button>
+        <ul class="nav-links">
+          <li><a href="index.html">Start</a></li>
+          <li><a href="gallery.html">Galleri</a></li>
+          <li><a href="process.html">Arbetsprocess</a></li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <picture>
+          <source srcset="images/hero4.jpg?as=avif" type="image/avif" />
+          <source srcset="images/hero4.jpg?as=webp" type="image/webp" />
+          <source srcset="images/hero4.jpg?" type="image/jpeg" />
+          <img
+            src="images/hero4.jpg"
+            alt="dekorativ herobild med blå och gröna vågräta ränder"
+            class="hero-image"
+          />
+        </picture>
+        <div class="hero-content">
+          <h1>Moment 2</h1>
+          <p>
+            I denna uppgift ska du använda FetchAPI tillsammans med async/await
+            och try/catch för att göra ett AJAX-anrop till JSON-data.
+          </p>
+          <a href="process.html" class="btn">Läs mer</a>
+        </div>
+      </section>
+    </header>
+    <main>
+      <h2>Webbutveckling - Ramschema</h2>
+      <section class="ramschema">
+        <div class="searchbar">
+          <label for="search">Sök:</label>
+          <input
+            type="text"
+            id="search"
+            placeholder="Sök efter kurskod eller kursnamn"
+          />
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th onclick="sortTable('code')">Kurskod ⬍</th>
+              <th onclick="sortTable('coursename')">Namn ⬍</th>
+              <th onclick="sortTable('progression')">Progression ⬍</th>
+            </tr>
+          </thead>
+          <tbody id="courseTable">
+            <!-- Data laddas in här -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
