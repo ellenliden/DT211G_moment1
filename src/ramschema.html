@@ -28,6 +28,7 @@
           <li><a href="index.html">Start</a></li>
           <li><a href="gallery.html">Galleri</a></li>
           <li><a href="process.html">Arbetsprocess</a></li>
+          <li><a href="ramschema.html">Ramschema</a></li>
         </ul>
       </nav>
       <section class="hero">
@@ -64,16 +65,39 @@
         <table>
           <thead>
             <tr>
-              <th onclick="sortTable('code')">Kurskod ⬍</th>
-              <th onclick="sortTable('coursename')">Namn ⬍</th>
-              <th onclick="sortTable('progression')">Progression ⬍</th>
+              <th
+                onclick="sortTable('code')"
+                data-column="code"
+                data-column-name="Kurskod"
+              >
+                Kurskod
+              </th>
+              <th
+                onclick="sortTable('coursename')"
+                data-column="coursename"
+                data-column-name="Namn"
+              >
+                Namn
+              </th>
+              <th
+                onclick="sortTable('progression')"
+                data-column="progression"
+                data-column-name="Progression"
+              >
+                Progression
+              </th>
             </tr>
           </thead>
+
           <tbody id="courseTable">
             <!-- Data laddas in här -->
           </tbody>
         </table>
       </section>
     </main>
+    <footer>
+      <p>Ellen Lidén</p>
+      <p>VT2025 DT211G Datateknik, Frontend-baserad webbutveckling</p>
+    </footer>
   </body>
 </html>

@@ -198,17 +198,15 @@ h3 {
 
 /* Ramschema */
 .searchbar {
-  margin-left: 8rem;
-
+  margin-left: 10%;
 }
-
 
 input {
   margin: 1rem;
   padding: 0.6rem;
-  width: 80%;
+  width: 70%;
+  font-size: 1rem;
 }
-
 
 table {
   width: 80%;
@@ -218,14 +216,20 @@ table {
 
 th,
 td {
-  border: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   padding: 0.8rem;
   text-align: left;
 }
 
+td {
+  border-top: 1px solid #ddd;
+}
+
 th {
   cursor: pointer;
-  background-color: #f4f4f4;
+  text-decoration: underline;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 /* Footer*/
@@ -275,6 +279,10 @@ footer p {
   .process-main {
     max-width: 70%;
     margin-left: 4vw;
+  }
+  /* Styling för ramschema-sidan */
+  input {
+    width: 60%;
   }
 }
 
@@ -347,4 +355,9 @@ footer p {
     max-width: 80%;
     margin-left: 0;
   }
+
+    /* Styling för ramschema-sidan */
+    input {
+      width: 70%;
+    }
 }
