@@ -288,8 +288,18 @@ footer p {
 
 /* För mobile (max-width: 768px)*/
 @media (max-width: 768px) {
+
   .nav-links {
     display: none;
+    flex-direction: column; 
+    position: absolute;
+    top: 5.3rem; 
+    right: 0;
+    width: 100%;
+    background: rgb(236, 236, 236);
+    text-align: center;
+    padding: 1rem 0;
+    z-index: 1000;
   }
 
   .nav-links li {
@@ -298,6 +308,7 @@ footer p {
 
   .nav-links.active {
     display: flex;
+    flex-direction: column;
   }
 
   .menu-toggle {
@@ -356,8 +367,8 @@ footer p {
     margin-left: 0;
   }
 
-    /* Styling för ramschema-sidan */
-    input {
-      width: 70%;
-    }
+  /* Styling för ramschema-sidan */
+  input {
+    width: 70%;
+  }
 }
